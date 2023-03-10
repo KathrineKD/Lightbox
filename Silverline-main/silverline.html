@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Silverline Unito</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="silverline.css" />
+  </head>
+  <body class="baggrundsfarven">
+    <style>
+      /* vores google fonts */
+      @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@600&family=Rubik&display=swap");
+    </style>
+
+    <!-- Animation - Lightbox -->
+    <div>
+      <h2 class="header">Egenskaber</h2>
+      <h3 id="flyt_midt">
+        Tryk på billederne og læs mere om SVS Unito Infinitys egenskaber.
+      </h3>
+      <p id="flyt_midt_på">
+        Intreseret i at hører mere?
+        <b> <a href="">Tilmeld dig vores newsletter nu.</a> </b>
+      </p>
+
+      <!-- The grid: four columns -->
+      <div class="row">
+        <div class="column">
+          <img
+            class="small"
+            src="Billeder/kogende_tekst.png"
+            alt="Kogende vand"
+            onclick="myFunction(this);"
+          />
+          <p class="under_img">Kogende vand</p>
+        </div>
+        <div class="column">
+          <img
+            class="small"
+            src="Billeder/filtreret_tekst.png"
+            alt="Filtreret vand"
+            onclick="myFunction(this);"
+          />
+          <p class="under_img">Filtreret vand</p>
+        </div>
+        <div class="column">
+          <img
+            class="small"
+            src="Billeder/isvand_tekst.png"
+            alt="Isvand"
+            onclick="myFunction(this);"
+          />
+          <p class="lidt_mere_skub">Isvand</p>
+        </div>
+        <div class="column">
+          <img
+            class="small"
+            src="Billeder/mix_tekst.png"
+            alt="Mix vand"
+            onclick="myFunction(this);"
+          />
+          <p class="lidt_mere_skub">Mix vand</p>
+        </div>
+        <div class="column">
+          <img
+            class="small"
+            src="Billeder/brus_tekst.png"
+            alt="Vand med brus"
+            onclick="myFunction(this);"
+          />
+          <p class="under_img">Vand med brus</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- The expanding image container -->
+    <div class="container">
+      <!-- Close the image -->
+      <span onclick="this.parentElement.style.display='none'" class="closebtn"
+        >&times;</span
+      >
+
+      <!-- Expanded image -->
+      <img id="expandedImg" style="width: 45%" />
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
